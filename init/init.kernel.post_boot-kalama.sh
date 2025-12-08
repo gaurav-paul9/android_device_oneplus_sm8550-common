@@ -123,7 +123,7 @@ echo 0 > /proc/sys/walt/sched_boost
 echo 0 > /proc/sys/kernel/sched_util_clamp_min_rt_default
 
 # configure governor settings for silver cluster
-echo "walt" > /sys/devices/system/cpu/cpufreq/policy0/scaling_governor
+# echo "walt" > /sys/devices/system/cpu/cpufreq/policy0/scaling_governor
 echo 0 > /sys/devices/system/cpu/cpufreq/policy0/walt/down_rate_limit_us
 echo 0 > /sys/devices/system/cpu/cpufreq/policy0/walt/up_rate_limit_us
 if [ $rev == "1.0" ] || [ $rev == "1.1" ]; then
@@ -143,7 +143,7 @@ fi
 echo 100 > /proc/sys/walt/input_boost/input_boost_ms
 
 # configure governor settings for gold cluster
-echo "walt" > /sys/devices/system/cpu/cpufreq/policy3/scaling_governor
+# echo "walt" > /sys/devices/system/cpu/cpufreq/policy3/scaling_governor
 echo 0 > /sys/devices/system/cpu/cpufreq/policy3/walt/down_rate_limit_us
 echo 0 > /sys/devices/system/cpu/cpufreq/policy3/walt/up_rate_limit_us
 if [ $rev == "1.0" ] || [ $rev == "1.1" ]; then
@@ -155,7 +155,7 @@ echo 537600 > /sys/devices/system/cpu/cpufreq/policy3/scaling_min_freq
 echo 1 > /sys/devices/system/cpu/cpufreq/policy3/walt/pl
 
 # configure governor settings for gold+ cluster
-echo "walt" > /sys/devices/system/cpu/cpufreq/policy7/scaling_governor
+# echo "walt" > /sys/devices/system/cpu/cpufreq/policy7/scaling_governor
 echo 0 > /sys/devices/system/cpu/cpufreq/policy7/walt/down_rate_limit_us
 echo 0 > /sys/devices/system/cpu/cpufreq/policy7/walt/up_rate_limit_us
 if [ $rev == "1.0" ] || [ $rev == "1.1" ]; then
