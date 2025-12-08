@@ -615,3 +615,13 @@ subsystem mem_buf_vm
 
 # IPA Events
 /dev/ipa_events         0660   radio      radio
+
+# Allow root and system (init, PowerHAL, post_boot) to modify CPU freq limits
+/sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq     0666   system   system
+/sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq     0666   system   system
+
+/sys/devices/system/cpu/cpufreq/policy3/scaling_min_freq     0666   system   system
+/sys/devices/system/cpu/cpufreq/policy3/scaling_max_freq     0666   system   system
+
+/sys/devices/system/cpu/cpufreq/policy7/scaling_min_freq     0666   system   system
+/sys/devices/system/cpu/cpufreq/policy7/scaling_max_freq     0666   system   system
