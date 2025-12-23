@@ -414,8 +414,8 @@ DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
 DEVICE_MANIFEST_FILE += \
     $(AUDIO_HAL_DIR)/configs/common/manifest_non_qmaa.xml \
     $(AUDIO_HAL_DIR)/configs/common/manifest_non_qmaa_extn.xml \
-    $(LOCAL_PATH)/vintf/manifest_kalama.xml \
-    $(LOCAL_PATH)/vintf/network_manifest.xml
+    device/oneplus/sm8550-common/vintf/manifest_kalama.xml \
+    device/oneplus/sm8550-common/vintf/network_manifest.xml
     
 ODM_MANIFEST_FILES := \
     $(LOCAL_PATH)/vintf/network_manifest_odm.xml
