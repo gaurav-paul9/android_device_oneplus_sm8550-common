@@ -1055,7 +1055,6 @@ odm/lib64/libsubsys-utils.so
 odm/lib64/libvasapi.so
 odm/lib64/vendor.oplus.hardware.communicationcenter-V2-ndk.so
 odm/lib64/vendor.oplus.hardware.subsys-V5-ndk.so
-odm/lib64/vendor.oplus.hardware.subsys_radio-V8-ndk.so
 system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
 system_ext/etc/permissions/qcrilhook.xml
 system_ext/etc/permissions/qti_libpermissions.xml
@@ -1466,3 +1465,4 @@ vendor/lib64/libwfduibcsrcinterface_vendor.so
 vendor/lib64/libwfdutils_proprietary.so
 vendor/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so
+odm/lib64/vendor.oplus.hardware.subsys_radio-V9-ndk.so
