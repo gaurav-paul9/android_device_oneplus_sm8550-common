@@ -43,6 +43,7 @@ lib_fixups: lib_fixups_user_type = {
         'libQnnHtpV73Stub',
         'libpwirisfeature',
         'libpwirishalwrapper',
+        'vendor.oplus.hardware.communicationcenter-V2-ndk',
         'vendor.qti.diaghal@1.0',
         'vendor.qti.hardware.dpmservice@1.0',
         'vendor.qti.hardware.qccsyshal@1.0',
@@ -73,7 +74,7 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
     'odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff': blob_fixup()
         .add_needed('libshims_aidl_fingerprint_v2.oplus.so'),
-    'odm/bin/hw/vendor.oplus.hardware.charger-V10-service': blob_fixup()
+    'odm/bin/hw/vendor.oplus.hardware.charger-V9-service': blob_fixup()
         .add_needed('libbase_shim.so'),
     'odm/etc/init/init.network.rc': blob_fixup()
         .regex_replace(r'/\* (Huo\.Chen@SYSTEM\.RF, 2024/09/06, Add for ICC) \*/', r'# \1'),
@@ -90,15 +91,31 @@ blob_fixups: blob_fixups_user_type = {
     ('vendor/bin/hw/android.hardware.security.keymint-service-qti', 'vendor/lib64/libqtikeymint.so'): blob_fixup()
         .add_needed('android.hardware.security.rkp-V3-ndk.so'),
     'vendor/etc/media_codecs_kalama.xml': blob_fixup()
-        .regex_replace('.*media_codecs_(google_audio|google_c2|google_telephony|google_video|vendor_audio).*\n', '')
-        .regex_replace('</MediaCodecs>','    <Include href="media_codecs_dolby_audio.xml" />')
-        .add_line_if_missing('</MediaCodecs>'),
+        .regex_replace('.*media_codecs_(google_audio|google_c2|google_telephony|google_video|vendor_audio).*\n', ''),
     'vendor/etc/seccomp_policy/qwesd@2.0.policy': blob_fixup()
         .add_line_if_missing('pipe2: 1'),
     'vendor/lib64/libqcodec2_core.so': blob_fixup()
         .add_needed('libcodec2_shim.so'),
     'vendor/lib64/vendor.libdpmframework.so': blob_fixup()
         .add_needed('libhidlbase_shim.so'),
+    # APS turbo fix: on the port, the camera app's classloader namespace cannot dlopen the /odm
+    # ArcSoft/QNN helper libs (couple-HDR, turbo, QNN HTP), which gates the DSP/QNN path so turbo
+    # can't run. Exposing them as vendor public libraries lets the app namespace resolve them.
+    'vendor/etc/public.libraries.txt': blob_fixup()
+        .add_line_if_missing('libarcsoft_hdr_couple_api.so')
+        .add_line_if_missing('libarcsoft_high_dynamic_range_couple.so')
+        .add_line_if_missing('libarcsoft_smart_denoise.so')
+        .add_line_if_missing('libarcsoft_turbo_hdr_raw.so')
+        .add_line_if_missing('libarcsoft_turbo_raw.so')
+        .add_line_if_missing('libarcsoft_qnnhtp.so')
+        .add_line_if_missing('libQnnHtp.so')
+        .add_line_if_missing('libQnnSystem.so')
+        .add_line_if_missing('libQnnHtpV73Stub.so')
+        .add_line_if_missing('libQnnGpu.so')
+        .add_line_if_missing('libAlgoProcess.so')
+        .add_line_if_missing('libOplusSecurity.so')
+        .add_line_if_missing('libalog.so')
+        .add_line_if_missing('libapsfixup.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(

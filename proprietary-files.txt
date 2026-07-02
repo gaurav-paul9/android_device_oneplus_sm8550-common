@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from OnePlus 11 5G (CPH2449_16.0.3.500(EX01)).
+## are from OnePlus 11 5G (CPH2449_16.0.2.400(EX01)).
 
 # ACDBs
 vendor/etc/acdbdata/ffv_models/ffv__5.0.1_0.1__3.0.0_0.0__eai_2.10_enpu3.pmd
@@ -105,9 +105,9 @@ vendor/lib/rfsa/adsp/nearby.so
 vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 
 # Audio
-# odm/lib64/lib_lvacfs.so
-# odm/lib64/liblvacfs_wrapper.so
-# odm/lib64/libtfa98xx.so
+odm/lib64/lib_lvacfs.so
+odm/lib64/liblvacfs_wrapper.so
+odm/lib64/libtfa98xx.so
 vendor/etc/models/acd/event.eai
 vendor/etc/models/acd/music.eai
 vendor/etc/models/acd/speech.eai
@@ -181,7 +181,10 @@ vendor/firmware/CAMERA_ICP.b16
 vendor/firmware/CAMERA_ICP.b17
 vendor/firmware/CAMERA_ICP.b18
 vendor/firmware/CAMERA_ICP.b19
+vendor/firmware/CAMERA_ICP.b20
 vendor/firmware/CAMERA_ICP.elf
+vendor/firmware/CAMERA_ICP.mbn
+vendor/firmware/CAMERA_ICP.mdt
 vendor/firmware/CAMERA_ICP_170.elf
 vendor/firmware/tof8801_firmware.bin
 
@@ -372,7 +375,7 @@ vendor/lib64/libqdcm-json-mode-parser.so
 vendor/lib64/libqdcm-mode-parser.so
 vendor/lib64/libsnapdragoncolor-manager.so
 vendor/lib64/libsnapdragoncolor-qdcm.so
-# vendor/lib64/vendor.oplus.hardware.cwb@1.0.so
+vendor/lib64/vendor.oplus.hardware.cwb@1.0.so
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 
 # Display (Pixelworks)
@@ -472,9 +475,9 @@ vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 # ESE
 odm/bin/hw/vendor.qti.esepowermanager@1.1-service
 odm/etc/init/vendor.qti.esepowermanager@1.1-service.rc
-# odm/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so
-# odm/lib64/vendor.qti.esepowermanager@1.0.so
-# odm/lib64/vendor.qti.esepowermanager@1.1.so
+odm/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so
+odm/lib64/vendor.qti.esepowermanager@1.0.so
+odm/lib64/vendor.qti.esepowermanager@1.1.so
 vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so;MODULE_SUFFIX=_vendor
 vendor/lib64/libesepmconfig.so
 vendor/lib64/vendor.qti.esepowermanager@1.0.so;MODULE_SUFFIX=_vendor
@@ -511,6 +514,9 @@ vendor/firmware/evass.b15
 vendor/firmware/evass.b16
 vendor/firmware/evass.b17
 vendor/firmware/evass.b18
+vendor/firmware/evass.b19
+vendor/firmware/evass.mbn
+vendor/firmware/evass.mdt
 
 # FASTCV
 vendor/lib64/libfastcvdsp_stub.so
@@ -520,15 +526,15 @@ vendor/lib64/libfastcvopt.so
 odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff
 odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc
 odm/etc/vintf/manifest/manifest_oplus_fingerprint_aidl_v2.xml
-# odm/lib64/libolc_vnd.so
+odm/lib64/libolc_vnd.so
 
 # Fingerprint Pay
 odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprintpay@1.0-service
 odm/etc/init/vendor.oplus.hardware.biometrics.fingerprintpay@1.0-service.rc
 odm/etc/vintf/manifest/manifest_oplus_ifaa.xml
-# odm/lib64/libifaa_factory.so
-# odm/lib64/librpmbengclient.so
-# odm/lib64/libsecurity_event_dcs_vnd.so
+odm/lib64/libifaa_factory.so
+odm/lib64/librpmbengclient.so
+odm/lib64/libsecurity_event_dcs_vnd.so
 
 # Fingerprint Pay firmware
 odm/vendor/firmware/alipay.b00
@@ -572,7 +578,10 @@ vendor/lib64/libllvm-qgl.so
 vendor/firmware/a740_sqe.fw
 vendor/firmware/a740_zap.b00
 vendor/firmware/a740_zap.b01
+vendor/firmware/a740_zap.b02
 vendor/firmware/a740_zap.elf
+vendor/firmware/a740_zap.mbn
+vendor/firmware/a740_zap.mdt
 vendor/firmware/gen70e00_sqe.fw
 vendor/firmware/gen70e00_zap.mbn
 vendor/firmware/gmu_gen70200.bin
@@ -585,6 +594,7 @@ vendor/gpu/kbc/unified_ksqs.bin
 vendor/lib64/hw/vulkan.adreno.so
 
 # GNSS
+odm/etc/izat.conf
 odm/etc/sap.conf
 vendor/bin/hw/android.hardware.gnss-aidl-service-qti
 vendor/bin/edgnss-daemon
@@ -659,6 +669,8 @@ vendor/lib64/vendor.qti.gnss-service.so
 # Horae
 system/lib64/libostatslog.so:system_ext/lib64/libostatslog.so
 system_ext/bin/horae
+system_ext/etc/horae/horae.conf
+system_ext/etc/horae/horae_SM8550.conf
 system_ext/etc/init/horae.rc
 
 # Hotword Enrollment
@@ -731,7 +743,7 @@ vendor/lib64/lib-rtpcommon.so
 vendor/lib64/lib-rtpcore.so
 vendor/lib64/lib-rtpsl.so
 vendor/lib64/librcc.so
-# vendor/lib64/vendor.oplus.hardware.ims-V1-ndk.so
+vendor/lib64/vendor.oplus.hardware.ims-V1-ndk.so
 vendor/lib64/vendor.qti.hardware.radio.ims-V12-ndk.so
 vendor/lib64/vendor.qti.hardware.radio.ims@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.ims@1.1.so
@@ -772,6 +784,7 @@ vendor/etc/msm_irqbalance.conf
 
 # Kernel
 vendor/bin/init.qcom.class_core.sh
+vendor/bin/init.qcom.post_boot.sh
 vendor/bin/init.qti.kernel.sh
 vendor/bin/system_dlkm_modprobe.sh
 vendor/bin/vendor_modprobe.sh
@@ -882,20 +895,20 @@ odm/lib64/aiframe/libQnnSystem.so;MODULE_SUFFIX=.aiframe
 odm/lib64/aiframe/libaiboost_qnn_external_delegate.so;FIX_SONAME
 odm/lib64/aiframe/libqcom_llm.so
 odm/lib64/aiframe/libtransformer_lite.so
-# odm/lib64/libQnnCpu.so
-# odm/lib64/libQnnGpu.so
-# odm/lib64/libQnnHtp.so
-# odm/lib64/libQnnHtpPrepare.so
-# odm/lib64/libQnnHtpV73CalculatorStub.so
-# odm/lib64/libQnnHtpV73Stub.so
-# odm/lib64/libQnnSaver.so
-# odm/lib64/libaiboost.so
-# odm/lib64/libaiboost_llm.so
-# odm/lib64/libaiboost_qnn_sr.so
-# odm/lib64/libaiboost_sr.so
-# odm/lib64/libaiboost_te.so;DUMMY_SHARED_LIB
-# odm/lib64/libaiboost_ubwc.so
-# odm/lib64/libc++_shared.so
+odm/lib64/libQnnCpu.so
+odm/lib64/libQnnGpu.so
+odm/lib64/libQnnHtp.so
+odm/lib64/libQnnHtpPrepare.so
+odm/lib64/libQnnHtpV73CalculatorStub.so
+odm/lib64/libQnnHtpV73Stub.so
+odm/lib64/libQnnSaver.so
+odm/lib64/libaiboost.so
+odm/lib64/libaiboost_llm.so
+odm/lib64/libaiboost_qnn_sr.so
+odm/lib64/libaiboost_sr.so
+odm/lib64/libaiboost_te.so
+odm/lib64/libaiboost_ubwc.so
+odm/lib64/libc++_shared.so
 vendor/lib64/libQnnCpu.so;MODULE_SUFFIX=_vendor
 vendor/lib64/libQnnHtp.so;MODULE_SUFFIX=_vendor
 vendor/lib64/libQnnHtpPrepare.so;MODULE_SUFFIX=_vendor
@@ -905,14 +918,14 @@ vendor/lib64/libqnnengine.so
 
 # OPLUS Charger
 odm/bin/hw/gauged
-odm/bin/hw/vendor.oplus.hardware.charger-V10-service
-odm/etc/init/vendor.oplus.hardware.charger-V10-service.rc
+odm/bin/hw/vendor.oplus.hardware.charger-V9-service
+odm/etc/init/vendor.oplus.hardware.charger-V9-service.rc
 odm/etc/vintf/manifest/manifest_oplus_charger_aidl.xml
 odm/etc/charge.cfg
-# odm/lib64/libGaiaClient_vnd.so
+odm/lib64/libGaiaClient_vnd.so
 
 # OPLUS OSense
-# odm/lib64/libosenseaidlhalclient.so
+odm/lib64/libosenseaidlhalclient.so
 
 # OPLUS Project
 odm/bin/hw/vendor.oplus.hardware.stability.oplus_project-V1-service
@@ -929,12 +942,82 @@ vendor/bin/pm-proxy
 vendor/bin/pm-service
 vendor/lib64/libperipheral_client.so
 
-# QSPM
-vendor/lib64/vendor.qti.qspmhal@1.0-impl.so
-vendor/lib64/vendor.qti.qspmhal@1.0.so
-
 # Performance
+vendor/bin/hw/vendor.qti.hardware.iop@2.0-service
+vendor/bin/hw/vendor.qti.hardware.perf-hal-service
+vendor/bin/poweropt-service
+vendor/etc/init/poweropt-service.rc
+vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc
+vendor/etc/init/vendor.qti.hardware.perf-hal-service.rc
+vendor/etc/lm/prekill/prekill_2GB.data
+vendor/etc/lm/prekill/prekill_4GB.data
+vendor/etc/lm/prekill/prekill_6GB.data
+vendor/etc/lm/AdaptLaunchFeature.xml
+vendor/etc/lm/AppClassifierFeature.xml
+vendor/etc/lm/LightningLaunchesFeature.xml
+vendor/etc/lm/PreKillFeature.xml
+vendor/etc/lm/PrefAppsFeature.xml
+vendor/etc/lm/ProCompFeature.xml
+vendor/etc/lm/QAPE.xml
+vendor/etc/lm/QGPE.xml
+vendor/etc/lm/QGPEActionMap.xml
+vendor/etc/lm/SilkyScrollsFeature.xml
+vendor/etc/lm/sPLHFeature.xml
+vendor/etc/perf/avcsysnodesconfigs.xml
+vendor/etc/perf/commonresourceconfigs.xml
+vendor/etc/perf/commonsysnodesconfigs.xml
+vendor/etc/perf/perfboostsconfig.xml
+vendor/etc/perf/perfconfigstore.xml
+vendor/etc/perf/powerhint.xml
+vendor/etc/perf/targetavcsysnodesconfigs.xml
+vendor/etc/perf/targetconfig.xml
+vendor/etc/perf/targetresourceconfigs.xml
+vendor/etc/perf/targetsysnodesconfigs.xml
+vendor/etc/perf/testcommonresourceconfigs.xml
+vendor/etc/perf/testtargetresourceconfigs.xml
+vendor/etc/pwr/AODPowerOptFeature.xml
+vendor/etc/pwr/PSMPowerOptFeature.xml
+vendor/etc/pwr/PowerFeatureConfig.xml
+vendor/etc/pwr/StandbyFeature.xml
+vendor/etc/pwr/VideoPowerOptFeature.xml
+vendor/etc/vintf/manifest/vendor.qti.hardware.perf.xml
+vendor/etc/vintf/manifest/vendor.qti.hardware.power.powermodule.xml
+vendor/lib64/libadaptlaunch.so
+vendor/lib64/libaodoptfeature.so
+vendor/lib64/libapengine.so
+vendor/lib64/libappclassifier.so
+vendor/lib64/liblearningmodule.so
+vendor/lib64/liblightninglaunches.so
+vendor/lib64/liblmutils-ns.so
+vendor/lib64/libmemperfd.so
+vendor/lib64/libmeters-ns.so
+vendor/lib64/libmeters.so
+vendor/lib64/libperfconfig.so
+vendor/lib64/libperfgluelayer.so
+vendor/lib64/libperfioctl.so
 vendor/lib64/libpowercore.so
+vendor/lib64/libprefapps.so
+vendor/lib64/libprekill.so
+vendor/lib64/libprocomp.so
+vendor/lib64/libpsmoptfeature.so
+vendor/lib64/libqapesdk.so
+vendor/lib64/libqti-iopd-client.so
+vendor/lib64/libqti-iopd.so
+vendor/lib64/libqti-perfd-client.so
+vendor/lib64/libqti-perfd.so
+vendor/lib64/libqti-qesdk-secure.so
+vendor/lib64/libqti-util.so
+vendor/lib64/libqti-utils.so
+vendor/lib64/libsilkyscrolls.so
+vendor/lib64/libskewknob.so
+vendor/lib64/libsplh.so
+vendor/lib64/libstandbyfeature.so
+vendor/lib64/vendor.qti.hardware.iop@1.0.so
+vendor/lib64/vendor.qti.hardware.iop@2.0.so
+vendor/lib64/vendor.qti.hardware.power.powermodule@1.0.so
+vendor/lib64/vendor.qti.memory.pasrmanager@1.0.so
+vendor/lib64/vendor.qti.memory.pasrmanager@1.1.so
+vendor/lib64/vendor.qti.power.pasrmanager@1.0.so
 
 # Power-off alarm
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
@@ -1021,6 +1104,13 @@ vendor/lib64/libsystem_health_mon.so
 system_ext/etc/init/qspa_system.rc
 system_ext/etc/qspa/qspa_default.rc
 
+# QSPM
+vendor/bin/vendor.qti.qspmhal@1.0-service
+vendor/etc/init/vendor.qti.qspmhal@1.0-service.rc
+vendor/etc/seccomp_policy/qspm.policy
+vendor/lib64/vendor.qti.qspmhal@1.0-impl.so
+vendor/lib64/vendor.qti.qspmhal@1.0.so
+
 # QTI service tracker
 vendor/bin/hw/vendor.qti.hardware.servicetracker@1.2-service
 vendor/etc/init/vendor.qti.hardware.servicetracker@1.2-service.rc
@@ -1038,24 +1128,24 @@ odm/etc/vintf/manifest/device_manifest_communication_center_aidl.xml
 odm/etc/vintf/manifest/device_manifest_subsys.xml
 odm/etc/QtiFtmPublicKey.pem
 odm/etc/plugin_config.xml
-# odm/lib64/lib-virtual-modem-protos.so
-# odm/lib64/libcommcenterfw.so
-# odm/lib64/libcommcenterutils.so
-# odm/lib64/libdmtp-protos-lite.so
-# odm/lib64/libdmtp.so
-# odm/lib64/libdmtpclient.so
-# odm/lib64/libmindroid-app.so
-# odm/lib64/libmindroid-framework.so
-# odm/lib64/libqti-radio-service.so
-# odm/lib64/libradio-service.so
-# odm/lib64/libradioapis.so
-# odm/lib64/librfapis.so
-# odm/lib64/libsubsys-service.so
-# odm/lib64/libsubsys-utils.so
-# odm/lib64/libvasapi.so
-# odm/lib64/vendor.oplus.hardware.communicationcenter-V2-ndk.so
-# odm/lib64/vendor.oplus.hardware.subsys-V5-ndk.so
-# odm/lib64/vendor.oplus.hardware.subsys_radio-V8-ndk.so
+odm/lib64/lib-virtual-modem-protos.so
+odm/lib64/libcommcenterfw.so
+odm/lib64/libcommcenterutils.so
+odm/lib64/libdmtp-protos-lite.so
+odm/lib64/libdmtp.so
+odm/lib64/libdmtpclient.so
+odm/lib64/libmindroid-app.so
+odm/lib64/libmindroid-framework.so
+odm/lib64/libqti-radio-service.so
+odm/lib64/libradio-service.so
+odm/lib64/libradioapis.so
+odm/lib64/librfapis.so
+odm/lib64/libsubsys-service.so
+odm/lib64/libsubsys-utils.so
+odm/lib64/libvasapi.so
+odm/lib64/vendor.oplus.hardware.communicationcenter-V2-ndk.so
+odm/lib64/vendor.oplus.hardware.subsys-V5-ndk.so
+odm/lib64/vendor.oplus.hardware.subsys_radio-V8-ndk.so
 system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
 system_ext/etc/permissions/qcrilhook.xml
 system_ext/etc/permissions/qti_libpermissions.xml
@@ -1144,8 +1234,8 @@ vendor/lib64/qcrild_libqcrilnrutils.so
 vendor/lib64/qtiPeripheralMgr.so
 vendor/lib64/qtiril-utils.so
 vendor/lib64/qtiwakelock.so
-# vendor/lib64/vendor.oplus.hardware.appradioaidl-V1-ndk.so
-# vendor/lib64/vendor.oplus.hardware.communicationcenter-V2-ndk.so;MODULE_SUFFIX=_vendor
+vendor/lib64/vendor.oplus.hardware.appradioaidl-V1-ndk.so
+vendor/lib64/vendor.oplus.hardware.communicationcenter-V2-ndk.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.qti.hardware.data.connection@1.0.so
 vendor/lib64/vendor.qti.hardware.data.connection@1.1.so
 vendor/lib64/vendor.qti.hardware.data.connectionfactory-V1-ndk.so
@@ -1233,14 +1323,14 @@ vendor/lib64/libqcbor.so
 # Secure element
 odm/bin/hw/vendor.qti.secure_element@1.2-service
 odm/etc/init/vendor.qti.secure_element@1.2-service.rc
-# odm/lib64/android.hardware.secure_element@1.0-impl.so
+odm/lib64/android.hardware.secure_element@1.0-impl.so
 vendor/lib64/libGPMTEEC_vendor.so
 vendor/lib64/libGPTEE_vendor.so
 
 # Sensors
 odm/bin/oplus_sensor_fb
 odm/etc/init/init.oplus.sensor.rc
-# odm/lib64/liboplus_service.so
+odm/lib64/liboplus_service.so
 vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service
 vendor/bin/init.qcom.sensors.sh
 vendor/bin/sensors.qti
@@ -1383,6 +1473,7 @@ vendor/firmware/vpu20_1v.mbn
 vendor/firmware/vpu20_1v_unsigned.mbn
 vendor/firmware/vpu20_4v.mbn
 vendor/firmware/vpu20_4v_unsigned.mbn
+vendor/firmware/vpu30_4v.mbn
 vendor/firmware/vpu30_4v_unsigned.mbn
 vendor/firmware/vpu33_4v.mbn
 vendor/firmware/vpu33_4v_unsigned.mbn
