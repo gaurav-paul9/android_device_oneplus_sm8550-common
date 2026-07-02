@@ -105,9 +105,9 @@ vendor/lib/rfsa/adsp/nearby.so
 vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 
 # Audio
-odm/lib64/lib_lvacfs.so
-odm/lib64/liblvacfs_wrapper.so
-odm/lib64/libtfa98xx.so
+# odm/lib64/lib_lvacfs.so
+# odm/lib64/liblvacfs_wrapper.so
+# odm/lib64/libtfa98xx.so
 vendor/etc/models/acd/event.eai
 vendor/etc/models/acd/music.eai
 vendor/etc/models/acd/speech.eai
@@ -290,9 +290,9 @@ vendor/etc/seccomp_policy/qwesd@2.0.policy
 vendor/etc/ssg/tz_whitelist.json
 
 # Context Hub
-odm/etc/init/android.hardware.contexthub-service.qmi.rc
+# odm/etc/init/android.hardware.contexthub-service.qmi.rc
 odm/etc/permissions/android.hardware.context_hub.xml
-odm/etc/vintf/manifest/android.hardware.contexthub-service.qmi.xml
+# odm/etc/vintf/manifest/android.hardware.contexthub-service.qmi.xml
 vendor/bin/hw/android.hardware.contexthub-service.qmi
 vendor/etc/chre/preloaded_nanoapps.json
 vendor/etc/init/android.hardware.contexthub-service.qmi.rc
@@ -347,7 +347,7 @@ vendor/lib64/libdiag.so
 vendor/lib64/vendor.qti.diaghal@1.0.so;MODULE_SUFFIX=_vendor
 
 # Display (Features)
-odm/etc/init/hw/init.oplus.display.rc
+# odm/etc/init/hw/init.oplus.display.rc
 vendor/bin/feature_enabler_client
 vendor/etc/init/feature_enabler_client.rc
 vendor/etc/Oplus_QC_LTM_SM8550_2022_10_13.pfm
@@ -359,7 +359,7 @@ vendor/lib64/libhdrdynamic.so
 vendor/lib64/libhdrdynamicootf.so
 
 # Display (HWC)
-odm/etc/vintf/manifest/manifest_oplus_cwb.xml
+# odm/etc/vintf/manifest/manifest_oplus_cwb.xml
 vendor/bin/qdcmss
 vendor/etc/init/qdcmss.rc
 vendor/etc/snapdragon_color_libs_config.xml
@@ -470,20 +470,20 @@ vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 
 # ESE
-odm/bin/hw/vendor.qti.esepowermanager@1.1-service
-odm/etc/init/vendor.qti.esepowermanager@1.1-service.rc
-odm/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so
-odm/lib64/vendor.qti.esepowermanager@1.0.so
-odm/lib64/vendor.qti.esepowermanager@1.1.so
+# odm/bin/hw/vendor.qti.esepowermanager@1.1-service
+# odm/etc/init/vendor.qti.esepowermanager@1.1-service.rc
+# odm/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so
+# odm/lib64/vendor.qti.esepowermanager@1.0.so
+# odm/lib64/vendor.qti.esepowermanager@1.1.so
 vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so;MODULE_SUFFIX=_vendor
 vendor/lib64/libesepmconfig.so
 vendor/lib64/vendor.qti.esepowermanager@1.0.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.qti.esepowermanager@1.1.so;MODULE_SUFFIX=_vendor
 
 # eSIM
-odm/bin/hw/vendor.oplus.hardware.esim@1.0-service
-odm/etc/init/esim@1.0-service.rc
-odm/etc/vintf/manifest/manifest_oplus_esim.xml
+# odm/bin/hw/vendor.oplus.hardware.esim@1.0-service
+# odm/etc/init/esim@1.0-service.rc
+# odm/etc/vintf/manifest/manifest_oplus_esim.xml
 
 # EVA
 vendor/etc/eva/facedetection/model3.dat
@@ -517,18 +517,18 @@ vendor/lib64/libfastcvdsp_stub.so
 vendor/lib64/libfastcvopt.so
 
 # Fingerprint
-odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff
-odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc
-odm/etc/vintf/manifest/manifest_oplus_fingerprint_aidl_v2.xml
-odm/lib64/libolc_vnd.so
+# odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff
+# odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc
+# odm/etc/vintf/manifest/manifest_oplus_fingerprint_aidl_v2.xml
+# odm/lib64/libolc_vnd.so
 
 # Fingerprint Pay
-odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprintpay@1.0-service
-odm/etc/init/vendor.oplus.hardware.biometrics.fingerprintpay@1.0-service.rc
-odm/etc/vintf/manifest/manifest_oplus_ifaa.xml
-odm/lib64/libifaa_factory.so
-odm/lib64/librpmbengclient.so
-odm/lib64/libsecurity_event_dcs_vnd.so
+# odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprintpay@1.0-service
+# odm/etc/init/vendor.oplus.hardware.biometrics.fingerprintpay@1.0-service.rc
+# odm/etc/vintf/manifest/manifest_oplus_ifaa.xml
+# odm/lib64/libifaa_factory.so
+# odm/lib64/librpmbengclient.so
+# odm/lib64/libsecurity_event_dcs_vnd.so
 
 # Fingerprint Pay firmware
 odm/vendor/firmware/alipay.b00
@@ -863,7 +863,7 @@ vendor/lib64/vendor.qti.hardware.factory@1.1.so
 vendor/lib64/libvmmem.so
 
 # Misc
-odm/etc/init/init.oppo.reserve.rc
+# odm/etc/init/init.oppo.reserve.rc
 
 # Native public libraries
 vendor/etc/public.libraries.txt
@@ -882,20 +882,20 @@ odm/lib64/aiframe/libQnnSystem.so;MODULE_SUFFIX=.aiframe
 odm/lib64/aiframe/libaiboost_qnn_external_delegate.so;FIX_SONAME
 odm/lib64/aiframe/libqcom_llm.so
 odm/lib64/aiframe/libtransformer_lite.so
-odm/lib64/libQnnCpu.so
-odm/lib64/libQnnGpu.so
-odm/lib64/libQnnHtp.so
-odm/lib64/libQnnHtpPrepare.so
-odm/lib64/libQnnHtpV73CalculatorStub.so
-odm/lib64/libQnnHtpV73Stub.so
-odm/lib64/libQnnSaver.so
-odm/lib64/libaiboost.so
-odm/lib64/libaiboost_llm.so
-odm/lib64/libaiboost_qnn_sr.so
-odm/lib64/libaiboost_sr.so
-odm/lib64/libaiboost_te.so;DUMMY_SHARED_LIB
-odm/lib64/libaiboost_ubwc.so
-odm/lib64/libc++_shared.so
+# odm/lib64/libQnnCpu.so
+# odm/lib64/libQnnGpu.so
+# odm/lib64/libQnnHtp.so
+# odm/lib64/libQnnHtpPrepare.so
+# odm/lib64/libQnnHtpV73CalculatorStub.so
+# odm/lib64/libQnnHtpV73Stub.so
+# odm/lib64/libQnnSaver.so
+# odm/lib64/libaiboost.so
+# odm/lib64/libaiboost_llm.so
+# odm/lib64/libaiboost_qnn_sr.so
+# odm/lib64/libaiboost_sr.so
+# odm/lib64/libaiboost_te.so;DUMMY_SHARED_LIB
+# odm/lib64/libaiboost_ubwc.so
+# odm/lib64/libc++_shared.so
 vendor/lib64/libQnnCpu.so;MODULE_SUFFIX=_vendor
 vendor/lib64/libQnnHtp.so;MODULE_SUFFIX=_vendor
 vendor/lib64/libQnnHtpPrepare.so;MODULE_SUFFIX=_vendor
@@ -904,20 +904,20 @@ vendor/lib64/libQnnSystem.so
 vendor/lib64/libqnnengine.so
 
 # OPLUS Charger
-odm/bin/hw/gauged
-odm/bin/hw/vendor.oplus.hardware.charger-V10-service
-odm/etc/init/vendor.oplus.hardware.charger-V10-service.rc
-odm/etc/vintf/manifest/manifest_oplus_charger_aidl.xml
+# odm/bin/hw/gauged
+# odm/bin/hw/vendor.oplus.hardware.charger-V10-service
+# odm/etc/init/vendor.oplus.hardware.charger-V10-service.rc
+# odm/etc/vintf/manifest/manifest_oplus_charger_aidl.xml
 odm/etc/charge.cfg
-odm/lib64/libGaiaClient_vnd.so
+# odm/lib64/libGaiaClient_vnd.so
 
 # OPLUS OSense
-odm/lib64/libosenseaidlhalclient.so
+# odm/lib64/libosenseaidlhalclient.so
 
 # OPLUS Project
-odm/bin/hw/vendor.oplus.hardware.stability.oplus_project-V1-service
-odm/etc/init/vendor.oplus.hardware.stability.oplus_project-V1-service.rc
-odm/etc/vintf/manifest/manifest_oplus_stability_project_aidl.xml
+# odm/bin/hw/vendor.oplus.hardware.stability.oplus_project-V1-service
+# odm/etc/init/vendor.oplus.hardware.stability.oplus_project-V1-service.rc
+# odm/etc/vintf/manifest/manifest_oplus_stability_project_aidl.xml
 
 # PD
 vendor/bin/pd-mapper
@@ -1028,34 +1028,34 @@ vendor/etc/vintf/manifest/vendor.qti.hardware.servicetracker@1.2-service.xml
 vendor/lib64/hw/vendor.qti.hardware.servicetracker@1.2-impl.so
 
 # RIL
-odm/bin/hw/subsys_daemon
-odm/bin/commcenterd
-odm/bin/init.subsys.sh
-odm/etc/init/commcenterd.rc
-odm/etc/init/init.network.rc
-odm/etc/init/subsys_daemon.rc
-odm/etc/vintf/manifest/device_manifest_communication_center_aidl.xml
-odm/etc/vintf/manifest/device_manifest_subsys.xml
+# odm/bin/hw/subsys_daemon
+# odm/bin/commcenterd
+# odm/bin/init.subsys.sh
+# odm/etc/init/commcenterd.rc
+# odm/etc/init/init.network.rc
+# odm/etc/init/subsys_daemon.rc
+# odm/etc/vintf/manifest/device_manifest_communication_center_aidl.xml
+# odm/etc/vintf/manifest/device_manifest_subsys.xml
 odm/etc/QtiFtmPublicKey.pem
 odm/etc/plugin_config.xml
-odm/lib64/lib-virtual-modem-protos.so
-odm/lib64/libcommcenterfw.so
-odm/lib64/libcommcenterutils.so
-odm/lib64/libdmtp-protos-lite.so
-odm/lib64/libdmtp.so
-odm/lib64/libdmtpclient.so
-odm/lib64/libmindroid-app.so
-odm/lib64/libmindroid-framework.so
-odm/lib64/libqti-radio-service.so
-odm/lib64/libradio-service.so
-odm/lib64/libradioapis.so
-odm/lib64/librfapis.so
-odm/lib64/libsubsys-service.so
-odm/lib64/libsubsys-utils.so
-odm/lib64/libvasapi.so
-odm/lib64/vendor.oplus.hardware.communicationcenter-V2-ndk.so
-odm/lib64/vendor.oplus.hardware.subsys-V5-ndk.so
-odm/lib64/vendor.oplus.hardware.subsys_radio-V8-ndk.so
+# odm/lib64/lib-virtual-modem-protos.so
+# odm/lib64/libcommcenterfw.so
+# odm/lib64/libcommcenterutils.so
+# odm/lib64/libdmtp-protos-lite.so
+# odm/lib64/libdmtp.so
+# odm/lib64/libdmtpclient.so
+# odm/lib64/libmindroid-app.so
+# odm/lib64/libmindroid-framework.so
+# odm/lib64/libqti-radio-service.so
+# odm/lib64/libradio-service.so
+# odm/lib64/libradioapis.so
+# odm/lib64/librfapis.so
+# odm/lib64/libsubsys-service.so
+# odm/lib64/libsubsys-utils.so
+# odm/lib64/libvasapi.so
+# odm/lib64/vendor.oplus.hardware.communicationcenter-V2-ndk.so
+# odm/lib64/vendor.oplus.hardware.subsys-V5-ndk.so
+# odm/lib64/vendor.oplus.hardware.subsys_radio-V8-ndk.so
 system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
 system_ext/etc/permissions/qcrilhook.xml
 system_ext/etc/permissions/qti_libpermissions.xml
@@ -1231,16 +1231,16 @@ vendor/lib64/libminksocket_vendor.so
 vendor/lib64/libqcbor.so
 
 # Secure element
-odm/bin/hw/vendor.qti.secure_element@1.2-service
-odm/etc/init/vendor.qti.secure_element@1.2-service.rc
-odm/lib64/android.hardware.secure_element@1.0-impl.so
+# odm/bin/hw/vendor.qti.secure_element@1.2-service
+# odm/etc/init/vendor.qti.secure_element@1.2-service.rc
+# odm/lib64/android.hardware.secure_element@1.0-impl.so
 vendor/lib64/libGPMTEEC_vendor.so
 vendor/lib64/libGPTEE_vendor.so
 
 # Sensors
-odm/bin/oplus_sensor_fb
-odm/etc/init/init.oplus.sensor.rc
-odm/lib64/liboplus_service.so
+# odm/bin/oplus_sensor_fb
+# odm/etc/init/init.oplus.sensor.rc
+# odm/lib64/liboplus_service.so
 vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service
 vendor/bin/init.qcom.sensors.sh
 vendor/bin/sensors.qti
@@ -1366,11 +1366,11 @@ vendor/etc/init/init.time_daemon.rc
 vendor/lib64/libtime_genoff.so
 
 # Touch
-odm/bin/hw/vendor-oplus-hardware-touch-V2-service
-odm/bin/touchDaemon
-odm/etc/init/init.touchDaemon.rc
-odm/etc/init/vendor-oplus-hardware-touch-V2-service.rc
-odm/etc/vintf/manifest/manifest_touch_aidl.xml
+# odm/bin/hw/vendor-oplus-hardware-touch-V2-service
+# odm/bin/touchDaemon
+# odm/etc/init/init.touchDaemon.rc
+# odm/etc/init/vendor-oplus-hardware-touch-V2-service.rc
+# odm/etc/vintf/manifest/manifest_touch_aidl.xml
 
 # Video
 vendor/lib64/libstreamparser.so
