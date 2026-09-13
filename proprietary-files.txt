@@ -681,10 +681,10 @@ system_ext/etc/permissions/vendor.qti.imsdatachannel.xml|f7056c5e57e88392e5199f7
 system_ext/etc/sysconfig/qti_telephony_system_packages_config.xml|a5d8054180442381f62d26a7544ffff7d0b19b3c
 system_ext/etc/sysconfig/qti_whitelist_system_ext.xml|fc930929bee7d1f8ecc5b1c76193acdc2f923fe7
 system_ext/lib64/lib-imsvideocodec.so|da2bc4ae9812bbd44b582c81ab243e4dfb4b1c2f
-system_ext/lib64/lib-imsvt.so|571833e6d578ba2fb64a259052a4b6fdf5bb763b
+system_ext/lib64/lib-imsvt.so|ed22ce95d9c4dfa91aece24aef9fedf7cf58198f
 system_ext/lib64/lib-imsvtextutils.so|becfe69786834e0b65c4ce9526016c94aa8cbc01
-system_ext/lib64/lib-imsvtutils.so|29025c2a6b4095abdd233c2d5365654709833583
-system_ext/lib64/libdiag_system.so|c210802bfe3e34cdd4556e1887304ae1a22eb19c
+system_ext/lib64/lib-imsvtutils.so|6a3dbd35901efec90d8045bfdb60cb0d3b4d0202
+system_ext/lib64/libdiag_system.so|761037100addf3e827ea62aed79e338edac49697
 system_ext/lib64/libimscamera_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimscamera_jni.so|bd0409212689cbc5c5e7fe5e4587d75bb3b5aebd
 system_ext/lib64/libimsmedia_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimsmedia_jni.so|572398f0840f37e550a81503d609b438ea00905b
 system_ext/lib64/vendor.qti.ImsRtpService-V1-ndk.so|21832897ab986fcf58dbf6d2a1be84aeb7387de5
@@ -712,17 +712,17 @@ system_ext/lib64/vendor.qti.imsrtpservice@3.1.so|2200adf5cef0030cdba135fa639fc8d
 -system_ext/framework/vendor.qti.ims.rcsuce-V1.2-java.jar|72f2ee30c671472609afdc7436ebc7729b5a0fcb
 -system_ext/framework/vendor.qti.ims.rcsuceaidlservice-V1-java.jar|db7a8c67ab81c58a9ab2c9f788d13c17e77673f4
 -system_ext/framework/vendor.qti.imsdatachannel.jar|c264e7e155bce3fdd5aac6ad41384e4945704755
--system_ext/priv-app/ims/ims.apk|f837382e5f053981fdddc01cec4dbd9612936b5f
+-system_ext/priv-app/ims/ims.apk|614838c6661846ca538b799e4ad818023c413529
 -system_ext/app/ImsRcsService/ImsRcsService.apk|f3471d5e42f8378db1f2f4052f2b257d309a4d7c
 -system_ext/app/QtiTelephonyService/QtiTelephonyService.apk|765552dc7130cd07e1739b425df8a2237b7030ac
--system_ext/priv-app/QtiTelephony/QtiTelephony.apk|44b5a8d5d9df6768b84e7595d2db38afb6d7a9f6
--system_ext/app/atfwd/atfwd.apk|3d9b04151b935215218f7f894de6043c1c587247
--system_ext/app/AtFwd2/AtFwd2.apk|954d34bbe0c41d0d44d271ac1586c595bd182630
+-system_ext/priv-app/QtiTelephony/QtiTelephony.apk|a2f08c6ff0ca222aec4e46fabea98c020b2b9a50
+-system_ext/app/atfwd/atfwd.apk|6e751abff716c983b5f3676681d0a5dbd6692ca9
+-system_ext/app/AtFwd2/AtFwd2.apk|d0ca16c58c3e687ca04023ef5be3204726eaf966
 -system_ext/app/DeviceInfo/DeviceInfo.apk|85d07ba97c936e9e1a74ee447df8e2882e838243
 -system_ext/app/DynamicDDSService/DynamicDDSService.apk|7d944041a1fb1ef04341246d8c32182de3b25c6a
 -system_ext/app/ImsDataChannelService/ImsDataChannelService.apk|f02b9c71c3a7096ea7eb973eceaf0917ef163012
--system_ext/app/SimContact/SimContact.apk|16c9001a141f7ca76682b8831b81fdadc078e2d9
--system_ext/app/uceShimService/uceShimService.apk|b1fcf2dd4b369049398ddd3396c91870e9b914f5
+-system_ext/app/SimContact/SimContact.apk|9906df76abd69b7f6bcc3a34eeab6173c1790760
+-system_ext/app/uceShimService/uceShimService.apk|5e48e711b3cd5a332c6ecca881967797d00baf13
 
 # IMS(VENDOR)
 vendor/bin/ims-dataservice-daemon
@@ -1073,7 +1073,6 @@ odm/lib64/librfapis.so
 odm/lib64/libsubsys-service.so
 odm/lib64/libsubsys-utils.so
 odm/lib64/libvasapi.so
-system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
 system_ext/etc/permissions/qcrilhook.xml
 system_ext/etc/permissions/qti_libpermissions.xml
 system_ext/etc/permissions/qti_permissions.xml
