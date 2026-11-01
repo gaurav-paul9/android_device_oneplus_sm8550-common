@@ -129,10 +129,6 @@ PRODUCT_COPY_FILES += \
 # Dolby
 $(call inherit-product, hardware/dolby/dolby.mk)
 
-# Dolby Vision
-PRODUCT_PACKAGES += \
-    dolbycodec2
-
 # Doze
 PRODUCT_PACKAGES += \
     OplusDoze \
