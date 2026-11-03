@@ -17,6 +17,9 @@
          on the headphone/microphone jack. When false use the older uevent framework. -->
     <bool name="config_useDevInputEventForAudioJack">true</bool>
 
+    <!-- PowerInsight battery current divisor (OnePlus reports current directly in mA) -->
+    <integer name="config_powerInsightCurrentDivisor">1</integer>
+
     <!-- Default files to pin via Pinner Service -->
     <string-array name="config_defaultPinnerServiceFiles">
         <item>/system/framework/arm64/boot-framework.oat</item>
