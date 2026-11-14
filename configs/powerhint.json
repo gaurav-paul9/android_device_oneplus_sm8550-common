@@ -32,7 +32,7 @@
       "Name": "CPULittleClusterDownRateLimit",
       "Path": "/sys/devices/system/cpu/cpufreq/policy0/walt/down_rate_limit_us",
       "Values": [
-        "20000",
+        "10000",
         "2000"
       ],
       "ResetOnInit": true
@@ -442,7 +442,7 @@
       "PowerHint": "INTERACTIVE",
       "Node": "CPULittleClusterDownRateLimit",
       "Duration": 0,
-      "Value": "20000"
+      "Value": "10000"
     },
     {
       "PowerHint": "INTERACTIVE",
@@ -483,103 +483,103 @@
     {
       "PowerHint": "LAUNCH",
       "Node": "CPUBigPlusClusterMinFreq",
-      "Duration": 1500,
+      "Duration": 750,
       "Value": "2726400"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "CPUBigClusterMinFreq",
-      "Duration": 1500,
+      "Duration": 750,
       "Value": "9999999"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "CPULittleClusterMinFreq",
-      "Duration": 1500,
+      "Duration": 750,
       "Value": "9999999"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "UclampTAMin",
-      "Duration": 1500,
+      "Duration": 750,
       "Value": "50"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "UclampFGMin",
-      "Duration": 1500,
+      "Duration": 750,
       "Value": "50"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "CPUBWHystTriggerCount",
-      "Duration": 1500,
+      "Duration": 750,
       "Value": "0"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "CPUBWHystLength",
-      "Duration": 1500,
+      "Duration": 750,
       "Value": "0"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "CPUBWHistMemory",
-      "Duration": 1500,
+      "Duration": 750,
       "Value": "0"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "CPUBWMinFreq",
-      "Duration": 1500,
+      "Duration": 750,
       "Value": "3187000"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "LLCCBWHystTriggerCount",
-      "Duration": 1500,
+      "Duration": 750,
       "Value": "0"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "LLCCBWHystLength",
-      "Duration": 1500,
+      "Duration": 750,
       "Value": "0"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "LLCCBWHistMemory",
-      "Duration": 1500,
+      "Duration": 750,
       "Value": "0"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "LLCCBWMinFreq",
-      "Duration": 1500,
+      "Duration": 750,
       "Value": "1066000"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "L3MinFreq",
-      "Duration": 1500,
+      "Duration": 750,
       "Value": "1804800"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "GPUForceClkOn",
-      "Duration": 1500,
+      "Duration": 750,
       "Value": "1"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "GPUForceRailOn",
-      "Duration": 1500,
+      "Duration": 750,
       "Value": "1"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "GPUIdleTimer",
-      "Duration": 1500,
+      "Duration": 750,
       "Value": "10000"
     },
     {
