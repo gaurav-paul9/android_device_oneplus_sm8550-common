@@ -595,6 +595,42 @@
       "Value": "475000000"
     },
     {
+      "PowerHint": "CAMERA_LAUNCH",
+      "Node": "UclampTAMin",
+      "Duration": 500,
+      "Value": "50"
+    },
+    {
+      "PowerHint": "CAMERA_LAUNCH",
+      "Node": "CPUBigClusterMinFreq",
+      "Duration": 500,
+      "Value": "9999999"
+    },
+    {
+      "PowerHint": "CAMERA_LAUNCH",
+      "Node": "CPUBWMinFreq",
+      "Duration": 500,
+      "Value": "3187000"
+    },
+    {
+      "PowerHint": "CAMERA_SHOT",
+      "Node": "UclampTAMin",
+      "Duration": 500,
+      "Value": "50"
+    },
+    {
+      "PowerHint": "CAMERA_SHOT",
+      "Node": "CPUBigClusterMinFreq",
+      "Duration": 500,
+      "Value": "9999999"
+    },
+    {
+      "PowerHint": "CAMERA_SHOT",
+      "Node": "CPUBWMinFreq",
+      "Duration": 500,
+      "Value": "3187000"
+    },
+    {
       "PowerHint": "Flipendo",
       "Node": "CPULittleClusterMaxFreq",
       "Duration": 0,
